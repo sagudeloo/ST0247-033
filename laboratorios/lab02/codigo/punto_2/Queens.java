@@ -7,6 +7,7 @@ public class Queens {
     int [] board;
     int nQueens;
     int [] deadPoint;
+    int nSolutions = 0;
     LinkedList<Integer> possible;
 
     public Queens(int nQueens){
@@ -21,7 +22,7 @@ public class Queens {
 
     public void generateBoard(int k){
         if(k == nQueens){
-
+            nSolutions++;
         }
         for (int i = 0; i < nQueens; i++){
             board[k] = possible.pop();
@@ -43,15 +44,11 @@ public class Queens {
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         int nQueens = sc.nextInt();
-        String row = sc.nextLine();
-        String [] column = row.split(".");
-//        for (int i = 0; i < nQueens; i++) {
-//            row = sc.nextLine();
-//            column = row.split(".");
-//        }
-        for (String s: column) {
-            System.out.println(s);
-        }
+        String row;
+        String [] column;
+        Queens queens = new Queens(nQueens);
+        queens.generateBoard(0);
+        System.out.println(queens.nSolutions);
 
     }
 }
