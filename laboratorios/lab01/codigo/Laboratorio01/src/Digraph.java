@@ -20,19 +20,7 @@ public class Digraph<V, C>{
 		vertexes = new HashMap<>();
 		arcs = new HashMap<>();
 	}
-	
-	/**
-	 * Metodo para añadir un arco nuevo, donde se representa cada nodo con un entero
-	 * y se le asigna un peso a la longitud entre un nodo fuente y uno destino
-	 * @param source desde donde se hara el arco
-	 * @param destination hacia donde va el arco
-	 * @param distance  el peso de la longitud entre source y destination
-	 */
-	public void addArc(V source, V destination, C distance){
-		
-		(arcs.get(source)).put(destination, distance);
-	}
-	
+
 	/**
 	 * Metodos para agregar nuevos vertices
 	 *
@@ -44,7 +32,19 @@ public class Digraph<V, C>{
 		vertexes.put(id, (new Vertex((Long ) id, coordinateX, coordinateY)));
 		arcs.put(id, new HashMap<>());
 	}
-	
+
+	/**
+	 * Metodo para añadir un arco nuevo, donde se representa cada nodo con un entero
+	 * y se le asigna un peso a la longitud entre un nodo fuente y uno destino
+	 * @param source desde donde se hara el arco
+	 * @param destination hacia donde va el arco
+	 * @param distance  el peso de la longitud entre source y destination
+	 */
+	public void addArc(V source, V destination, C distance){
+
+		(arcs.get(source)).put(destination, distance);
+	}
+
 	/**
 	 * Metodo para obtener una lista de hijos desde un nodo, es decir todos los nodos
 	 * asociados al nodo pasado como argumento
