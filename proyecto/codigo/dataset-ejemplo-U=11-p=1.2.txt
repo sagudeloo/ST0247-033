@@ -1,21 +1,5 @@
 p 1.2
-
-Vertices. Formato: ID, coordenada x, coordenada y, nombre
-
-1 -75.5785878 6.203001 Universidad EAFIT
-2 -75.5843712 6.2469099 
-3 -75.5934267 6.2019138 Quintas del Rodeo
-4 -75.6054044 6.2190641 Urbanización Siempre Verde
-5 -75.5606877 6.2279922 Unidad Residencial Bosques de San Diego II
-6 -75.5378678 6.2990523 La invasión
-7 -75.5880397 6.2920903 Urbanización Brisas de Robledo
-8 -75.6151169 6.2482916 
-9 -75.5683865 6.263255 Unidad Residencial Torres de la Fuente
-10 -75.6134405 6.2484115 
-11 -75.5416705 6.3435888 Unidad Residencial San Francisco II
-
-Costo de Caminos Cortos. Formato: ID, ID, peso
-
+u 11
 1 1 0
 1 2 17
 1 3 6
